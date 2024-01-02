@@ -17,6 +17,14 @@ function Form({ addReserve }) {
       number
     }
     addReserve(newCard)
+    clearForm()
+  }
+
+  function clearForm() {
+    setName('')
+    setDate('')
+    setTime('')
+    setNumber('')
   }
 
   return (
@@ -49,7 +57,7 @@ function Form({ addReserve }) {
         value={number}
         onChange={event => setNumber(event.target.value)}
       />
-      <button>Make Reservation</button>
+      <button onClick = { event => submitReserve(event)}>Make Reservation</button>
     </form>
   )
 }
