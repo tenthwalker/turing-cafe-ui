@@ -1,9 +1,11 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import Card from '../Card/Card.js';
 
 function App() {
 
   const url = 'http://localhost:3001/api/v1/reservations';
+
 
   useEffect(() => {
     fetch(url)
@@ -18,6 +20,7 @@ function App() {
       <div className='resy-form'>
       </div>
       <div className='resy-container'>
+        <Card />
       </div>
     </div>
   );
