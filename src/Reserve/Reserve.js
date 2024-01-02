@@ -17,7 +17,7 @@ function Reserve({ cards }) {
   })
 
   return (
-    <div>
+    <div className='card-display'>
       {reserveCards}
     </div>
   )

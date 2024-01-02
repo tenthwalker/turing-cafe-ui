@@ -1,7 +1,7 @@
 .card {
   background-color: whitesmoke;
   border: 5px solid teal;
-  border-radius: 5px;
+  border-radius: 10px;
   color: teal;
   padding: 5px;
 }
@@ -10,4 +10,10 @@ button {
   color: whitesmoke;
   background-color: teal;
   border: none;
+}
+
+.card-display {
+  display:flex;
+  flex-flow: wrap row;
+
 }
