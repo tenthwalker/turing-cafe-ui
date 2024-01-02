@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card.js';
+import Form from '../Form/Form.js'
 import Reserve from '../Reserve/Reserve.js';
 
 function App() {
