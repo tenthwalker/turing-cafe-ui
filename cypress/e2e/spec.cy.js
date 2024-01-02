@@ -11,22 +11,18 @@ describe('calls the API', () => {
   })
 })
 
-// describe(() => {
-//   it(() => {
-
-//   })
-// })
-
 //submission form
 
-describe(() => {
-  it(() => {
+describe('submission form functionality', () => {
+  it('starts with an empty form', () => {
+    cy.visit('/');
+    cy.get('form').should('have.value', '');
+  }),
 
+  it('accepts inputs', () => {
+    cy.get('input').should('have.value', '');
+    cy.get('input').first().click();
+    cy.get('input').first().type('Robert');
+    cy.get('input').first().should('have.value', 'Robert');
   })
 })
-
-// describe(() => {
-//   it(() => {
-
-//   })
-// })
