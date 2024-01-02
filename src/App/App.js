@@ -1,7 +1,17 @@
 import './App.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
+
+  const url = 'http://localhost:3001/api/v1/reservations';
+
+  useEffect(() => {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.log(error))
+  }, []);
+
   return (
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
